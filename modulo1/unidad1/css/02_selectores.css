@@ -1,0 +1,18 @@
+div p {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+}
+ul > li {
+    color: white;
+    background-color: rgb(182, 58, 58);
+    text-align: center;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+input[type="text"]{
+    border: 2px solid green;
+    padding: 5px;
+}
