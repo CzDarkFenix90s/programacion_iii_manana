@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color:#33333;
+    padding: 10px;
+    height: 100vh;
+}
