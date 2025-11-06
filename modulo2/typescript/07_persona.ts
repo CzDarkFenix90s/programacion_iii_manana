@@ -1,15 +1,16 @@
-export class Persona{
+export class Persona {
     nombre: string;
     edad: number;
-    constructor(
-        nombre: string, 
+    constructor( 
+        nombre: string,
         edad: number
-    ) {
-        this.nombre = nombre;
+    ){
+        this.nombre=nombre;
         this.edad = edad;
     }
-    saludar(): void {
+    saludar(): void{
         console.log(
-        `Hola, soy ${this.nombre} y tengo ${this.edad} años.`)
+        `Hola, soy ${this.nombre} y tengo ${this.edad} años`)
     }
+
 }

@@ -1,11 +1,11 @@
 var usuario1 = {
     id: 12,
-    nombre: "Juan Perez"
+    nombre: 'Jose Garcia Marquez'
 };
 var usuario2 = {
     id: 13,
-    nombre: "Pablo Escobar",
-    correo: "pablo@escobar.com"
+    nombre: 'Pablo Escobar',
+    correo: 'pablo@escobar.com'
 };
 console.log(usuario1);
 console.log(usuario1.id);

@@ -1,5 +1,5 @@
 var edad = 30;
-var nombre = "Maria";
+var nombre = 'Maria';
 var activo = true;
 var valor = 6;
 if (edad > 18 && activo) {
@@ -8,7 +8,7 @@ if (edad > 18 && activo) {
 else {
     console.log('No trabaja');
 }
-var frutas = ['manzana', 'banana', 'cereza'];
+var frutas = ['manzana', 'banana', 'orange'];
 for (var i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
 }
@@ -17,8 +17,6 @@ var Estado;
     Estado[Estado["Pendiente"] = 0] = "Pendiente";
     Estado[Estado["Enviado"] = 1] = "Enviado";
     Estado[Estado["Entregado"] = 2] = "Entregado";
-    Estado[Estado["Cancelado"] = 3] = "Cancelado";
 })(Estado || (Estado = {}));
 console.log(Estado);
 console.log(Estado.Entregado);
-console.log(Estado.Cancelado);

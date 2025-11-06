@@ -1,14 +1,14 @@
 class Animal{
     constructor(nombre){
-        this.nombre = nombre;
+        this.nombre=nombre;
     }
-    hacersonido(){
-        console.log("Realizar algun ruido")
+    hacerSonido(){
+        console.log("Realiza algun ruido")
     }
 }
 
-class Perro extends Animal{}
-const miPerro = new Perro('Firulais');
-const miAnimal = new Animal('Animalito');
-miPerro.hacersonido(); 
-miAnimal.hacersonido(); 
+class Perro extends Animal{} 
+const miPerro = new Perro('Toby');
+const miAnimal = new Animal('Lucero');
+miPerro.hacerSonido();
+miAnimal.hacerSonido();

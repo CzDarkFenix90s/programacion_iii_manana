@@ -1,75 +1,69 @@
-let temperature = 35;
+let temperatura= 35;
 
-if (temperature > 30) {
+if(temperatura>30){
     console.log("Hace calor");
 }
 
-let password = "pass123";
-if (password === "pass123"){
+let password ="pass123";
+if(password==="pass12345"){
     console.log("Usuario logueado");
-} else{
-    console.log("Acceso denegado");
-} 
-
-let nota = 7;
-if (nota >= 9){
-    console.log("Sobresaliente");
-} else if (nota >= 6){
-    console.log("Aprobado");
 } else {
+    console.log("Acceso denegado");
+}
+
+let nota =7;
+if(nota>=9){
+    console.log("Sobresaliente");
+} else if (nota>=6) {
+    console.log("Aprobado");
+}else {
     console.log("Reprobado");
 }
 
-let edad = 20;
-let tiene_licencia = true;
-if (edad >= 18){
-    if (tiene_licencia){
-        console.log("Puede conducir");
-    } else {
-        console.log("Necesita licencia para conducir");
+let edad=20;
+let tiene_licencia=true;
+if(edad>=18){
+    if(tiene_licencia){
+        console.log("Puede Conducir");
+    }else{
+        console.log("Necesita Licencia para conducir");
     }
 } else {
     console.log("Es menor de edad");
 }
 
-edad = 18;
-tiene_licencia = true;
-if (edad >= 18){
-    if (tiene_licencia){
-        console.log("Puede conducir");
-    } else {
-        console.log("Necesita licencia para conducir");
-    }
-} else {
+edad=18;
+tiene_licencia=true;
+if(edad>=18 &&tiene_licencia){
+        console.log("Puede Conducir");
+}else if(edad>=18) {
+    console.log("Necesita Licencia para conducir");
+}else {
     console.log("Es menor de edad");
 }
-
-//Estructura switch
-let dia= "lunes";
-switch (dia){
+// Estructura Switch
+let dia = "lunes";
+switch(dia){
     case "lunes":
         console.log("Inicio de semana");
         break;
     case "viernes":
-        console.log("Ultimo dia laboral");
+        console.log("último dia laboral");
         break;
     default:
-        console.log("Dia normal");
+        console.log("Día Normal");
 }
 
-let a = 10;
-let b = 25;
-let c = 15;
-
-if (a > b && a > c) {
-    console.log("El número mayor es A:", a);
-} else if (b > a && b > c) {
-    console.log("El número mayor es B:", b);
-} else if (c > a && c > b) {
-    console.log("El número mayor es C:", c);
-} else {
-    console.log("Hay números iguales");
+let a =30;
+let b = 40;
+let c = 50;
+mayor=0;
+if (a>b) {
+    mayor=a;
+}if (c>mayor){
+    mayor=c;
 }
+console.log("el numero mayor es", mayor);
 
 
 
