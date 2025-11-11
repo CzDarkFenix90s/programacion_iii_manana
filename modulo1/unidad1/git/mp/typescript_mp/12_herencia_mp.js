@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _11_herencia_mp_1 = require("./11_herencia_mp");
+var vetGeneral = new _11_herencia_mp_1.Veterinario("Laura", "medicina general");
+console.log(vetGeneral.nombre);
+console.log(vetGeneral.especialidad);
+vetGeneral.atender();
+var vetCirujano = new _11_herencia_mp_1.CirujanoVeterinario("Andrés", "traumatología");
+console.log(vetCirujano.nombre);
+console.log(vetCirujano.especialidad);
+vetCirujano.atender();
