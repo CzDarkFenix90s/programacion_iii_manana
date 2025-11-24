@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="04_eventos_mp.js" defer></script>
+</head>
+<body>
+    <div id="contenedor"></div>
+    <button id="crear">Registrar Paciente</button>
+    <button id="eliminar">Eliminar Registro</button>
+    <button 
+        onclick="alert('Bienvenido al sistema de Consultas Veterinarias 🐶🐱')">
+        Saludo con JavaScript Inline
+    </button>
+    <button 
+        onclick="saludar()">
+        Saludo desde una función
+    </button>
+    <p id="parrafo">Hacer doble clic para mostrar información del paciente</p>
+    <form id="formulario" style="margin-top:20px;">
+        <input type="text" id="nombre" 
+            placeholder="Nombre del paciente (mascota)"
+        />
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
