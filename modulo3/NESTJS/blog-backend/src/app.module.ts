@@ -8,6 +8,7 @@ import { UsersModule } from './users/users.module';
 import { CategoriesModule } from './categories/categories.module';
 import { PostsModule } from './posts/posts.module';
 import { BasicsModule } from './basics/basics.module';
+import { MailModule } from './mail/mail.module';
 
 @Module({
   imports: [
@@ -21,15 +22,17 @@ import { BasicsModule } from './basics/basics.module';
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
-      // ssl: { rejectUnauthorized: false },
+      //ssl: { rejectUnauthorized: false },
     }),
     AuthModule,
     BasicsModule,
     UsersModule,
     CategoriesModule,
     PostsModule,
+    MailModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
+  
