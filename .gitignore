@@ -14,7 +14,7 @@ dist/
 logs/
 **/logs/
 
-# Dependency directories
+# Dependency directories,,
 **/package-lock.json
 **/yarn.lock
 

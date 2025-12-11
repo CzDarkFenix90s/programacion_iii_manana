@@ -1,1 +1,1 @@
-console.log("Hola desde un archivo externo");
+console.log("Hola un archivo externo de Js")

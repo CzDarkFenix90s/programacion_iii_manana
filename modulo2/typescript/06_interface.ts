@@ -1,10 +1,10 @@
-import { Usuario } from "./05_interface";
+import { usuario } from "./05_interface";
 
-const usuario1: Usuario = {
+const usuario1: usuario = {
     id: 12,
     nombre: 'Jose Garcia Marquez'
 }
-const usuario2: Usuario = {
+const usuario2: usuario = {
     id: 13,
     nombre: 'Pablo Escobar',
     correo: 'pablo@escobar.com'

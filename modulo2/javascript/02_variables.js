@@ -1,37 +1,36 @@
-console.log("VARIABLES");
+console.log("Variables Javascript")
 
-saludo = "Hola utilizando variables"
-console.log("Variable Saludo ", saludo);
-console.log("Tipo de variable", typeof (saludo));
+saludo="Hola utilizando variables"
+console.log("Variable Saludo:",saludo);
+console.log("Tipo de variable:",typeof (saludo))
 
-numero = 256
-console.log("Variable Numero ", numero);
-console.log("Tipo de variable ", typeof (numero));
+numero=1253
+console.log("Variable Numerica:",numero);
+console.log("Tipo de variable:",typeof (numero))
 
-booleana = true
-console.log("Variable Booleana ", booleana);
-console.log("Tipo de variable ", typeof (booleana));
+Booleano=true
+console.log("Variable Booleano:",Booleano);
+console.log("Tipo de variable:",typeof (Booleano));
 
-indefinida = undefined
-console.log("Variable Indefinida ", indefinida);
-console.log("Tipo de variable ", typeof (indefinida));
+idefinida=undefined
+console.log("Variable Indefinida:",idefinida);
+console.log("Tipo de variable:",typeof (idefinida));
 
-nula = null
-console.log("Variable Nula ", nula);
-console.log("Tipo de variable ", typeof (nula));
+nula=null
+console.log("Variable Nula:",nula);
+console.log("Tipo de variable:",typeof (nula));
 
+bigentero=87654321987654321
+console.log("Variable Big Entero:",bigentero);
+console.log("Tipo de variable:",typeof (bigentero));
 
-bigentero = 8765673434356743434345785n
-console.log("Variable BiInt ", bigentero);
-console.log("Tipo de variable ", typeof (bigentero));
-
-persona = {
-    nombre: "carlos",
-    edad: 30
+persona={
+    nombre:"Reins",
+    edad: 20
 }
-console.log("Variable Objeto ", persona);
-console.log("Tipo de variable ", typeof (persona));
+console.log("Variable Objeto:",persona);
+console.log("Tipo de variable:",typeof (persona));
 
-numeros = [12,12,22,34,4,4]
-console.log("Variable Array ", numeros);
-console.log("Tipo de variable ", typeof (numeros));
+numeros=[1, 2, 3, 4, 5]
+console.log("Variable Arreglo:",numeros);
+console.log("Tipo de variable:",typeof (numeros));

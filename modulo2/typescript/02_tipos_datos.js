@@ -1,22 +1,22 @@
 var edad = 30;
-var nombre = 'Maria';
+var nombre = "Juan";
 var activo = true;
 var valor = 6;
 if (edad > 18 && activo) {
-    console.log('trabajador activo');
+    console.log('trabajo activo');
 }
 else {
-    console.log('No trabaja');
+    console.log("no trabaja");
 }
-var frutas = ['manzana', 'banana', 'orange'];
+var frutas = ["manzana", "pera", "banana"];
 for (var i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
 }
 var Estado;
 (function (Estado) {
-    Estado[Estado["Pendiente"] = 0] = "Pendiente";
-    Estado[Estado["Enviado"] = 1] = "Enviado";
-    Estado[Estado["Entregado"] = 2] = "Entregado";
+    Estado[Estado["pendiente"] = 0] = "pendiente";
+    Estado[Estado["enviado"] = 1] = "enviado";
+    Estado[Estado["entregado"] = 2] = "entregado";
 })(Estado || (Estado = {}));
 console.log(Estado);
-console.log(Estado.Entregado);
+console.log(Estado.entregado);

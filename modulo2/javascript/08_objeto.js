@@ -1,49 +1,56 @@
 console.log("OBJETOS");
 let persona = {
-    nombre: "Ana",
-    edad: 30,
+    nombre: "Alexander",
+    edad: 19,
     ciudad: "Quito"
 };
+
 console.log(persona);
 console.log(persona.nombre);
-console.log(persona.ciudad);
-console.log(persona["edad"]);
-console.log("Modificación de una clave del objeto");
-persona.nombre="Maria"
+console.log(persona.edad);
+console.log(persona["ciudad"]);
+
+console.log("Modificación del objeto");
+persona.nombre = "Alexito";
 console.log(persona);
+
 console.log("Incluir clave al objeto");
-persona.direccion="Av. Occidental";
+persona.direccion = "Av. Occidental";
 console.log(persona);
-console.log("Eliminar clave al objeto");
+
+console.log("Eliminar clave del objeto");
 delete persona.direccion;
 console.log(persona);
 
-console.log("Recorrer un Objeto");
-for (let clave in persona){
+console.log("Recorrer un objeto");
+for (let clave in persona) {
     console.log(clave);
 }
+
 console.log("Mostrar claves con Object.keys");
 console.log(Object.keys(persona));
+
 console.log("Mostrar valores con Object.values");
 console.log(Object.values(persona));
-console.log("Objetos Anidados");
+
+console.log("objetos anidados");
 let estudiante = {
-    nombre: "Pedro",
-    apellido: "Perez",
+    nombre: "Alexander",
+    apellido: "Guaman",
     contacto: {
-        correo: "pedro@gmail.com",
-        telefono: "025162323",
-        celular: "0985809696"
+        correo: "alex@gmail.com",
+        telefono: "02345567",
+        celular: "0999991571"
     },
     materias: [
-      {
-        nombre: "programación III",
-        calificacion:8
-      },
-      {
-        nombre: "Base de datos II",
-        calificacion: 9
-      },  
+        {
+            nombre: "programacion III",
+            certificacion: 9
+        },
+        {
+            nombre: "Base de datos III",
+            calificacion: 9
+        },
     ]
 };
-console.log("Estudiante:  ", estudiante);
+console.log("Estudiante:  ", estudiante)

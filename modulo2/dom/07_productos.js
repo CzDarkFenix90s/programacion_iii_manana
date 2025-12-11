@@ -9,17 +9,17 @@ const productos = [
     { nombre: "Impresora", descripcion: "Multifunción", precio: 200, existencia: 3, ubicacion: "Estante I" },
     { nombre: "Webcam", descripcion: "1080p", precio: 35, existencia: 18, ubicacion: "Estante J" },
     { nombre: "Auriculares", descripcion: "Bluetooth", precio: 80, existencia: 14, ubicacion: "Estante K" }
-  ];
-  
-  const tabla = document.getElementById('cuerpoTabla');
-  productos.forEach(p => {
+];
+
+const tabla = document.getElementById('cuerpoTabla');
+productos.forEach(p => {
     const fila = document.createElement('tr');
     fila.innerHTML = `
-      <td>${p.nombre}</td>
-      <td>${p.descripcion}</td>
-      <td>$${p.precio.toFixed(2)}</td>
-      <td>${p.existencia}</td>
-      <td>${p.ubicacion}</td>
-    `;
+    <td>${p.nombre}</td>
+    <td>${p.descripcion}</td>
+    <td>$${p.precio.toFixed(2)}</td>
+    <td>${p.existencia}</td>
+    <td>${p.ubicacion}</td>
+  `;
     tabla.appendChild(fila);
-  });
+});

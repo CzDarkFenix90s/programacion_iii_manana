@@ -14,39 +14,39 @@ const baseDir = __dirname;
 
 // Mapas de tipos MIME básicos
 const mimeTypes = {
-  '.html': 'text/html',
-  '.js': 'application/javascript',
-  '.css': 'text/css',
-  '.json': 'application/json',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.txt': 'text/plain'
+    '.html': 'text/html',
+    '.js': 'application/javascript',
+    '.css': 'text/css',
+    '.json': 'application/json',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.txt': 'text/plain'
 };
 
 const server = createServer((req, res) => {
-  const urlPath = req.url === '/' ? '/index.html' : req.url;
-  const filePath = join(baseDir, decodeURIComponent(urlPath));
+    const urlPath = req.url === '/' ? '/index.html' : req.url;
+    const filePath = join(baseDir, decodeURIComponent(urlPath));
 
-  try {
-    if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
-      res.end('404 Not Found');
-      return;
+    try {
+        if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
+            res.writeHead(404, { 'Content-Type': 'text/plain' });
+            res.end('404 Not Found');
+            return;
+        }
+
+        const ext = extname(filePath);
+        const mimeType = mimeTypes[ext] || 'application/octet-stream';
+
+        res.writeHead(200, { 'Content-Type': mimeType });
+        const fileStream = createReadStream(filePath);
+        fileStream.pipe(res);
+    } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'text/plain' });
+        res.end('500 Internal Server Error');
+        console.error(err);
     }
-
-    const ext = extname(filePath);
-    const mimeType = mimeTypes[ext] || 'application/octet-stream';
-
-    res.writeHead(200, { 'Content-Type': mimeType });
-    const fileStream = createReadStream(filePath);
-    fileStream.pipe(res);
-  } catch (err) {
-    res.writeHead(500, { 'Content-Type': 'text/plain' });
-    res.end('500 Internal Server Error');
-    console.error(err);
-  }
 });
 
 server.listen(3000, '127.0.0.1', () => {
-  console.log(`Server running at http://127.0.0.1:3000/`);
+    console.log(`Server running at http://127.0.0.1:3000/`);
 });
