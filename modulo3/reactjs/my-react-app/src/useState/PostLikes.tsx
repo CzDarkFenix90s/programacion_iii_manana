@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function PostLikes() {
   const [likes, setLikes] = useState([0, 0]);
 
-  const likePost = (index: any) => {
+  const likePost = (index: number) => {
     const newLikes = [...likes];
     newLikes[index]++;
     setLikes(newLikes);

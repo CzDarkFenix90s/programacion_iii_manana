@@ -1,17 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function DocumentTitleChanger() {
-  const [count, setCount] = useState(0);
-  const [inpuut] = useState("");
+  const [title, setTitle] = useState('React App');
+  const [input, setInput] = useState('');
 
   useEffect(() => {
-    document.title = `Count: ${count}`;
-  }, [count]);
+    document.title = title;
+  }, [title]);
+
+  const updateTitle = () => {
+    if (input.trim()) {
+      setTitle(input);
+      setInput('');
+    }
+  };
 
   return (
     <div>
-      <p>Document title count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment Count</button>
+      <input
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Nuevo título"
+      />
+      <button onClick={updateTitle}>Actualizar título</button>
+      <p>Título actual: {title}</p>
     </div>
   );
 }

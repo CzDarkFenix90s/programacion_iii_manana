@@ -17,8 +17,7 @@ export default function MultiSwitch() {
           </label>
         </div>
       ))}
+      <p>Seleccionado: {Object.entries(switches).filter(([, v]) => v).map(([k]) => k).join(', ') || 'ninguno'}</p>
     </div>
   );
 }
-
-

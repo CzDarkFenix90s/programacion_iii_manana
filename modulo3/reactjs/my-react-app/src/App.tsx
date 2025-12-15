@@ -1,95 +1,68 @@
 /*
-import HelloWorld from './components/HelloWorld';
-import WelcomeUser from './components/WelcomeUser';
-import ButtonCounter from './components/ButtonCounter';
-import TextInput from './components/TextInput';
-import ToggleMessage from './components/ToggleMessage';
-import ShowDate from './components/ShowDate';
-import ColorBox from './components/ColorBox';
-import ConditionalText from './components/ConditionalText';
-import EmojiList from './components/EmojiList';
-import SimpleForm from './components/SimpleForm';
+import Greeting from './props/Greeting'
+import UserCard from './props/UserCard'
+import Promedio from './components/Promedio'
+import ButtonOne from './props/ButtonOne'
+import ParentButtonOne from './props/ParentButtonOne'
+import IncrementButton from './props/IncrementButton'
+import ParentIncrementButton from './props/ParentIncrementButton'
+import ParentInputNotifier from './props/ParentInputNotifier'
+import InputNotifier from './props/InputNotifier'
+import ParentUserList from './props/ParentUserList'
+import ParentLoginForm from './props/ParentLoginForm'
+import HoverFont from './useState/HoverFont'
+import AccessWithLimit from './useState/AccessWithLimit'
+import DocumentTitleChanger from './useState/DocumentTitleChanger'
+import PostLikes from './useState/PostLikes'
+import CheckboxSummary from './useState/CheckboxSummary'
+import LoginWithLimit from './useState/LoginWithLimit'
+import LanguageSwitcher from './useState/LanguageSwitcher'
+import MultiSwitch from './useState/MultiSwitch'
+
 
 function App() {
+  const userData = { name: "Carlos", apellido: "Garcia", age: 30, direccion: "10 de Agosto", telefono: "0995678839" };
   return (
     <>
-      <HelloWorld />
-      <WelcomeUser />
-      <ButtonCounter />
-      <TextInput />
-      <ToggleMessage />
-      <ShowDate />
-      <ColorBox />
-      <ConditionalText />
-      <EmojiList />
-      <SimpleForm />
-    </>
-  );
-}
-
-export default App; */
-
-/*
-import Greeting from './Props/Greeting';
-import UserCard from './Props/UseCard';
-import PromedioTresNotasForm from './components/PromedioTresNotasForm';
-
-function App() {
-
-  const userData = { name: 'Alexander', age: 30, address: 'Calle Falsa 123', phone: '1234567890' };
-  return (
-    <>
-      <Greeting name="Alexander" />
-      <Greeting name="Axel" />
-      <PromedioTresNotasForm />
+      <Greeting name="Francisco" />
+      <Greeting name="Ana" />
       <UserCard user={userData} />
+      <Promedio/>
+      <ButtonOne/>
+      <ParentButtonOne/>
+      <IncrementButton/>
+      <ParentIncrementButton/>
+      <InputNotifier onChangeText={function (): void {
+        throw new Error('Function not implemented.')
+      } }/>
+      <ParentInputNotifier/>
+      <ParentUserList/>
+      <ParentLoginForm/>
+      <HoverFont/>
+      <AccessWithLimit/>
+      <DocumentTitleChanger/>
+      <PostLikes/>
+      <CheckboxSummary/>
+      <LoginWithLimit/>
+      <LanguageSwitcher/>
+      <MultiSwitch/>
     </>
+
+    
   );
 }
 
 export default App;
 */
 
-/*
-import ParentButtonOne from './Props/ParentButtonOne';
-
+import LogEffect from './useEffect.tsx/LogEffect'
+import FetchUser from './useEffect.tsx/FetchUser'
 function App() {
   return (
     <>
-      <ParentButtonOne />
+      <LogEffect/>
+      <FetchUser/>
     </>
   );
 }
 export default App;
-*/
-
-/*
-import ParentIncrementButton from './Props/ParentIncrementButton';
-
-function App() {
-  return (
-    <>
-      <ParentIncrementButton />
-    </>
-  );
-}
-export default App;
-*/
-
-import ParentInputNotifier from './Props/ParentInputNotifier';
-import ParentUserList from './Props/ParentUserList';
-
-import ParentLoginForm from './Props/ParentLoginForm';
-
-function App() {
-  return (
-    <>
-      <ParentInputNotifier />
-      <ParentUserList />
-      <ParentLoginForm />
-    </>
-  );
-}
-export default App;
-
-

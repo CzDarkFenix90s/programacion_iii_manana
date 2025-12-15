@@ -14,7 +14,7 @@ export default function LoginWithLimit() {
       const success = window.confirm("¿Tienes premiso para acceder?");
       if(success) setAccess(true);
     } else {
-      window.confirm("¿Tienes premiso para acceder?");
+      window.confirm("Acceso denegado");
       setAttempts(attempts+1)};
   };
 
