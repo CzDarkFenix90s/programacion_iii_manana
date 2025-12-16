@@ -55,14 +55,20 @@ function App() {
 export default App;
 */
 
-import LogEffect from './useEffect.tsx/LogEffect'
-import FetchUser from './useEffect.tsx/FetchUser'
+import LogEffect from './useEffect.tsx/LogEffect';
+import FetchUser from './useEffect.tsx/FetchUser';
+import MoverCaja from './useRef/MoverCaja';
+
 function App() {
   return (
     <>
-      <LogEffect/>
-      <FetchUser/>
+      <LogEffect />
+      <FetchUser />
+
+      <h3>Mover Caja</h3>
+      <MoverCaja />
     </>
   );
 }
+
 export default App;
