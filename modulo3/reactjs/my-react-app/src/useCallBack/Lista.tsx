@@ -1,23 +1,22 @@
+
 import { useCallback } from 'react';
 
 interface ListaProps {
-  items: string[];
+    items: string[];
 }
 
 export default function Lista({ items }: ListaProps) {
-  const handleClick = useCallback((index: number) => {
-    console.log("Resultado:", index * 2);
-  }, []);
+    const handleClick = useCallback((item: string) => {
+        console.log("Seleccionado:", item);
+    }, []);
 
-  return (
-    <ul>
-      {items.map((item, index) => (
-        <li key={item}>
-          <button onClick={() => handleClick(index)}>
-            {item}
-          </button>
-        </li>
-      ))}
-    </ul>
-  );
+    return (
+        <ul>
+            {items.map(item => (
+                <li key={item}>
+                    <button onClick={() => handleClick(item)}>{item}</button>
+                </li>
+            ))}
+        </ul>
+    );
 }
